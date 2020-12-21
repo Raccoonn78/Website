@@ -1,0 +1,268 @@
+
+body {margin:0;}    
+    
+
+    body{
+       background-color: #383846;
+      
+    }
+
+    .container {
+    text-align: center;
+    position: relative;
+    height: 55px;
+    width: 406px;
+    font-size: 40px;
+    background: linear-gradient(135deg, #7e04cf 30%, #f70a0a 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    border: 3px solid transparent;
+    border-image: linear-gradient(135deg,    #7e04cf 30%, #f70a0a 70% );
+    border-image-slice: 3;
+    }
+    .container:before {
+    position: absolute;
+    left: 0;
+    top: -10;
+    width: 0;
+    height: 100%;
+    background: #222222;
+    z-index: -1;
+    content: '';
+    }
+    .container:hover::before {
+    animation: bg-animation 0.6s 1;/*скорость заполнения понля*/
+    animation-fill-mode: forwards;
+    }
+    @keyframes bg-animation {
+    0% {
+        width: 10%;/*заполненая часть поля при наведени*/
+    }
+    100% {
+        width: 100%;/*на сколько будет заполняться поле */
+    }
+    }
+    .center-up-container{
+    display: flex;
+    justify-content: center;
+    }
+    .bear {
+        background-image: url(https://pngriver.com/wp-content/uploads/2018/03/Download-Nissan-GT-R-PNG-Transparent-Image-420x279-For-Designing-Project.png);
+        background-size:109%;
+        width: 5%;
+        height: 5%;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        transition: 20s all;
+        z-index: -2;
+    }
+    
+    .bear_vis {
+        animation: bear-animation 20s ease;
+    }
+    @keyframes bear-animation {
+        0% {
+            transform: translateX(60%);
+        }
+        70% {
+            transform: translateX(70%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+        }
+    
+    .finish-img{
+        background-image: url(https://connect-prd-cdn.unity.com/20200209/webgl/a16f99da-ee7d-4c24-96fe-a8093b070603/Build/e9e46089-1da2-47ff-931d-f61ade17cda3);
+        background-size:  cover;
+        height: 40px;
+        width: 40px;
+        z-index: -3;
+    }
+    .finish-img2{
+        background-image: url(https://connect-prd-cdn.unity.com/20200209/webgl/a16f99da-ee7d-4c24-96fe-a8093b070603/Build/e9e46089-1da2-47ff-931d-f61ade17cda3);
+        background-size:  140%;
+        height: 40px;
+        width: 40px;
+        z-index: -3;
+        }
+    .position-img{
+        position: relative;
+        top:-65px;
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-start;
+        z-index: -5;
+        }
+
+
+
+
+
+
+       
+      
+@import url(https://fonts.googleapis.com/css?family=Lora);
+body {margin:0;}
+
+
+nav {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 30px;
+  font-size: 25px;  
+}
+ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+.topmenu > li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+.topmenu > li:last-child {
+  margin-right: 0;
+}
+.ebnaja-A{
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Goldman', cursive;
+  transition: .5s linear;
+}
+.fa {
+  
+  color: inherit;
+  padding-left: 10px;
+}
+.submenu {
+  font-size: 20px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.one ul {
+  background: #222229;
+}
+.one ul a {
+  color: #ffffff;
+}
+.one .submenu {
+  border:3px solid #18181b;
+  display: none;
+  background: #11111f;
+}
+.one ul li:hover .submenu {
+  display: block;
+} 
+.block-border{
+  border:3px dotted#11111f; 
+}
+
+
+
+
+.type-race{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Imprima', sans-serif;
+  background-image: url(iim/raceUP.jpg);
+  background-repeat: no-repeat;
+background-size:cover;
+align-self: flex-start;
+display: flex;
+}
+.type-race-type{
+  align-self: flex-start;
+  width: 100%;
+  height: 100%;
+}
+.type-race-a{
+  font-family: 'Jockey One', sans-serif;
+ width: 100%;
+ height: 100%;
+}
+
+.all-block-img{
+  margin-left: 1%;
+  display: flex;
+  flex-flow:row  nowrap;
+ justify-content: flex-start;
+
+  width: 96%;
+  height: 100%;
+}
+
+
+img{
+  width: 100%;
+  height: 100%; 
+  opacity: 0.25;
+  object-fit: cover;
+}
+
+
+img:hover{
+  width: 110%;
+  height: 110%;
+  z-index: 10000;
+  opacity:1;
+
+}
+
+
+.img-text{
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.img-text:hover{
+  font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .line-down{
+    border-top: 3px solid white;
+    text-align: center;
+    font-size: 50px;
+  }
+  .line-down-block{
+    text-align: center;
+    font-size: 50px;
+  }
+
+
+
+  

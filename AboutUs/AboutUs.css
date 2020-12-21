@@ -1,0 +1,284 @@
+body{
+    background-color: rgb(173, 170, 170);
+    margin: 0;
+    /*background-image: url(nascar1.jpg);
+    background-size: cover; 
+*/}
+
+.buttonup {
+  width:88px; 
+  height:118px;
+  position:fixed;
+  bottom:28px;
+  right:28px;
+  opacity: 0.01;
+  }
+
+nav {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 30px;
+    font-size: 25px;  
+  }
+  .topmenu{
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .topmenu > li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+  }
+  .topmenu > li:last-child {
+    margin-right: 0;
+  }
+  a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Goldman', cursive;
+    transition: .5s linear;
+  }
+  .fa {
+    
+    color: inherit;
+    padding-left: 10px;
+  }
+  .submenu {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+    list-style: none; 
+    font-size: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  .one ul {
+    background: #222229;
+  }
+  .one ul a {
+    color: #ffffff;
+  }
+  .one .submenu {
+    border:3px solid #18181b;
+    display: none;
+    background: #11111f;
+  }
+  .one ul li:hover .submenu {
+    display: block;
+  } 
+  .block-border{
+    border:3px dotted  #11111f; 
+  }
+  
+
+
+  .text-up{
+    font-size: 30px;
+    font-family: 'Goldman', cursive;;
+}
+.position-text-up{
+    display: flex;
+    justify-content: flex-start;
+    background-color:#292931;
+    border-bottom: 2px solid red;
+
+    height: 35px;
+    align-items: center;
+    z-index: 12;
+}
+
+.line-down{
+  border-top: 3px solid white;
+  text-align: center;
+  font-size: 50px;
+  background-color: #292931;
+  width: 100%;
+ 
+}
+.line-down-block{
+  text-align: center;
+  font-size: 50px;
+}
+.down{
+  display: flex;
+  align-content: flex-end;
+  justify-content:center;
+}
+
+
+
+
+
+.text{
+  font-size: 25px;
+}
+
+
+
+
+
+
+
+.ul{
+  display: flex;
+flex-direction: column;
+  list-style-type:none ;
+}
+.divName{
+  background-color: grey;
+  align-self: flex-start;
+  border: 1px solid grey;
+  box-shadow: 0 0 2px 1px;
+
+ margin-bottom: 8px;
+ font-size: 25px;
+ font-weight: 700;
+}
+.divReview{
+  background-color: grey;
+  align-self: flex-start;
+  border: 1px solid grey;
+  box-shadow: 0 0 2px 1px;
+ height: 100px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 25%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #000000;
+  outline: 0;
+  font-size: 1.3rem;
+  color: rgb(0, 0, 0);
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 20px;
+  cursor: text;
+  top: 20px;
+  opacity: 0.70;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 20px;
+  color: #000000;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #000000, #000000);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*кнопка*/
+.atuin-btn {
+  display: inline-flex;
+  margin: 5px;
+  text-decoration: none;
+  position: relative;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 12px 30px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase; 
+  font-family: 'Roboto Condensed', Тahoma, sans-serif;
+  background: #3b4247;
+  cursor: pointer; 
+  border: 2px solid #000000;
+  transition: transform 0.2s ease-out, padding 0.2s ease-out;
+  overflow: hidden;
+}
+.atuin-btn:hover,
+.atuin-btn:active,
+.atuin-btn:focus {
+  color: #FFF;
+  transform: rotate(-2deg);
+  padding: 12px 50px 12px 10px;
+}
+.atuin-btn:before {
+  content: "\27A4";
+  position: absolute;
+  right: -30px;
+  color: #1C4B73;  
+  transition: right 0.5s cubic-bezier(.97,.01,.97,.55);
+}
+.atuin-btn:hover:before,
+.atuin-btn:active:before,
+.atuin-btn:focus:before {
+  right: 10px;
+}
