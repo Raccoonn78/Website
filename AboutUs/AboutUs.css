@@ -282,3 +282,8 @@ flex-direction: column;
 .atuin-btn:focus:before {
   right: 10px;
 }
+
+
+.link{
+font-size:10px
+}
