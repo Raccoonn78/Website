@@ -137,11 +137,11 @@ nav {
 }
  
   .block{
-    width: 1000px; 
+    width: 100%; 
   }
   .block2{
   
-    width: 1000px; 
+    width: 100%; 
   }
 
   .text{
@@ -153,3 +153,10 @@ nav {
   .img{
     margin-left: 10%;
   }
+
+
+img{
+width: 50%;
+height: 50%;
+    object-fit: cover;
+}
